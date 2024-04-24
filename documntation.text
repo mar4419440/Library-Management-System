@@ -1,0 +1,50 @@
+Library Management System Documentation
+Introduction:
+
+The Library Management System is a software application designed to manage the operations of a library, including book management, patron management, borrowing and returning books, and searching for books. This documentation provides an overview of the system's architecture, components, and functionalities.
+Architecture:
+
+The system follows a layered architecture, comprising the following components:
+
+    Controllers: Handle incoming HTTP requests and delegate business logic to the appropriate services.
+    Services: Implement the core business logic of the system, including CRUD operations for books, patrons, and borrowing records.
+    Repositories: Interface with the database to perform CRUD operations on entities.
+    Entities: Represent the domain model of the system, including Book, Patron, and BorrowingRecord entities.
+
+Components:
+
+    BookController: Manages CRUD operations for books.
+    PatronController: Manages CRUD operations for patrons.
+    BorrowingRecordController: Handles borrowing and returning of books.
+    BookService: Implements business logic related to books.
+    PatronService: Implements business logic related to patrons.
+    BorrowingRecordService: Implements business logic related to borrowing and returning books.
+    BookRepository: Interface for CRUD operations on books in the database.
+    PatronRepository: Interface for CRUD operations on patrons in the database.
+    BorrowingRecordRepository: Interface for CRUD operations on borrowing records in the database.
+    Book: Entity representing a book.
+    Patron: Entity representing a library patron.
+    BorrowingRecord: Entity representing a borrowing record.
+
+Functionality:
+
+    Book Management: Allows adding, updating, deleting, and retrieving books.
+    Patron Management: Allows adding, updating, deleting, and retrieving patrons.
+    Borrowing and Returning Books: Allows patrons to borrow books and return them.
+    Searching for Books: Provides functionality to search for books by title, author, or other criteria.
+
+Testing:
+
+The system includes unit tests for the controllers and services, covering various scenarios such as creating, updating, and deleting entities, as well as handling HTTP requests.
+Usage:
+
+To use the system, follow these steps:
+
+    Install and configure the necessary dependencies (Java, Spring Boot, etc.).
+    Set up the database and environment variables as per the configuration.
+    Run the application.
+    Use the provided endpoints to interact with the system, such as creating, updating, or deleting books and patrons, borrowing and returning books, and searching for books.
+
+Conclusion:
+
+The Library Management System provides a robust solution for managing library operations efficiently. With its intuitive interface and comprehensive features, it streamlines the management of books, patrons, and borrowing records, enhancing the overall experience for library staff and patrons alike.
